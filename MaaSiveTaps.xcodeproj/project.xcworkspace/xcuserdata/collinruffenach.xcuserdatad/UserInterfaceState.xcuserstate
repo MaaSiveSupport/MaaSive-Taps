@@ -3015,8 +3015,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>336214574.225591</real>
-		<string>{651, 375}</string>
+		<real>336215736.67427099</real>
+		<string>{651, 1147}</string>
 		<string>{920, 0}</string>
 		<dict>
 			<key>$class</key>
@@ -6707,7 +6707,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>18</integer>
+					<integer>204</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -7375,8 +7375,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>336214574.22852898</real>
-		<string>{651, 375}</string>
+		<real>336215736.67714602</real>
+		<string>{651, 1147}</string>
 		<string>{920, 0}</string>
 		<string>-initWithNibName:bundle:</string>
 		<dict>
@@ -7411,7 +7411,7 @@
 				</dict>
 			</array>
 		</dict>
-		<string>{{0, 0}, {1416, 301}}</string>
+		<string>{{0, 0}, {1416, 930}}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
