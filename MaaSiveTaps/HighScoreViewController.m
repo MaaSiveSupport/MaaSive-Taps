@@ -131,11 +131,12 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
 	
 	Score *score = [self.scores objectAtIndex:indexPath.row];
 	cell.textLabel.text = [NSString stringWithFormat:@"%@: %@", score.name, score.score];
+	cell.detailTextLabel.text = [[score created_at] descriptionWithLocale:[NSLocale currentLocale]];
 
     return cell;
 }

@@ -10,6 +10,9 @@
 #import "RemoteScore.h"
 #import "Score.h"
 
+#define kNameErrorAlertViewTitle @"Name Error"
+#define kSaveScoreAlertViewTitle @"Save Your Score"
+
 @implementation GameViewController
 
 @synthesize managedObjectContext = managedObjectContext_;
@@ -35,7 +38,7 @@
 		self.remainingTime = 10;
 		self.remainingTimeLabel.text = [NSString stringWithFormat:@"Time Remaining: %d", self.remainingTime];
 		
-		self.scoreAlert = [[UIAlertView alloc] initWithTitle:@"Save Your Score"
+		self.scoreAlert = [[UIAlertView alloc] initWithTitle:kSaveScoreAlertViewTitle
 													 message:@"Blank Message"
 													delegate:self
 										   cancelButtonTitle:@"Cancel"
@@ -50,8 +53,7 @@
 															 selector:@selector(tick)
 															 userInfo:nil
 															  repeats:YES];
-		[self.countdownTimer fire];
-		
+		[self.countdownTimer fire];		
     }
 	
     return self;
@@ -83,26 +85,60 @@
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
 	
-	if(buttonIndex == 1) {
+	NSString *alertTitle = alertView.title;
 	
-		Score *score = [NSEntityDescription insertNewObjectForEntityForName:@"Score"
-													 inManagedObjectContext:self.managedObjectContext];
-		[score setScore:[NSNumber numberWithInt:self.tapCount]];
-		[score setName:self.nameTextField.text];		
+	if([alertTitle isEqualToString:kNameErrorAlertViewTitle]) {
+	
+		[self.scoreAlert show];
+	}
+	
+	else if([alertTitle isEqualToString:kSaveScoreAlertViewTitle]) {
 		
-		RemoteScore *remoteScore = [[RemoteScore alloc] initRemoteScoreWithScore:score];
-		[remoteScore saveRemoteWithBlock:^(BOOL saved, NSError *error) {
-			if(saved) {
-						
-				[score setCreated_at:remoteScore.created_at];
-				NSLog(@"Remote score saved to MaaSive");
+		if(buttonIndex == 1) {
+		
+			NSString *name = self.nameTextField.text;
+			
+			if(!name || [[name stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] isEqualToString:@""]) {
+			
+				UIAlertView *alert = [[UIAlertView alloc] initWithTitle:kNameErrorAlertViewTitle
+																message:@"You must enter a valid name or cancel"
+															   delegate:self
+													  cancelButtonTitle:@"Ok"
+													  otherButtonTitles:nil];
+				[alert show];	
+				
+				return;
 			}
 			
-			else {
+			Score *score = [NSEntityDescription insertNewObjectForEntityForName:@"Score"
+														 inManagedObjectContext:self.managedObjectContext];
+			[score setScore:[NSNumber numberWithInt:self.tapCount]];
+			[score setName:self.nameTextField.text];		
+			
+			RemoteScore *remoteScore = [[RemoteScore alloc] initRemoteScoreWithScore:score];
+			[remoteScore saveRemoteWithBlock:^(BOOL saved, NSError *error) {
+				if(saved) {
+							
+					[score setCreated_at:remoteScore.created_at];
+					NSLog(@"Remote score saved to MaaSive");
+					[self.navigationController performSelectorOnMainThread:@selector(popViewControllerAnimated:)
+																withObject:[NSNumber numberWithBool:YES]
+															 waitUntilDone:NO];
+				}
 				
-				NSLog(@"Error saving Remote Score: %@\n User Info: %@", [error localizedDescription], [error userInfo]);
-			}
-		}];
+				else {
+					
+					NSLog(@"Error saving Remote Score: %@\n User Info: %@", [error localizedDescription], [error userInfo]);
+				}
+			}];
+		}
+		
+		else {
+		
+			[self.navigationController performSelectorOnMainThread:@selector(popViewControllerAnimated:)
+														withObject:[NSNumber numberWithBool:YES]
+													 waitUntilDone:NO];
+		}
 	}
 }
 
