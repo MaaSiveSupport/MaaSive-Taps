@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1347B37AE59CD9627BCB5C2B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F71FA7480B5F34A4AC6BBE2 /* Security.framework */; };
+		1D315F85C11D531F9B9DDE95 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2998DCF0C52963A7A836BD /* SystemConfiguration.framework */; };
+		3032A3A8C415EFED5B5DC7DD /* MaaSive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B882DAECD5FF3717C59E3BE /* MaaSive.framework */; };
+		4DC676572CDA2B9A4630DC12 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDDC44631D7ED0FF73C40C8 /* libsqlite3.0.dylib */; };
+		4F607174B4892DEBCBFEBFEB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57A5B21D4B54203771BEE45 /* MobileCoreServices.framework */; };
+		80BA6341525E0952D1A746CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345BE761E48FFE73AFC921BB /* UIKit.framework */; };
+		9B21BD4F5B2639F5BDBC786B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA679A5C34F2D3B6AA50D631 /* CoreGraphics.framework */; };
+		C5AF99E14DE70315D51D6CD6 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C8294CDE917E4B7D09F0B4B9 /* libz.1.2.3.dylib */; };
+		E20D4D53140A0B8B00BA5380 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20D4D52140A0B8B00BA5380 /* UIKit.framework */; };
+		E20D4D55140A0B8B00BA5380 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20D4D54140A0B8B00BA5380 /* Foundation.framework */; };
+		E20D4D57140A0B8B00BA5380 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20D4D56140A0B8B00BA5380 /* CoreGraphics.framework */; };
+		E20D4D59140A0B8B00BA5380 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20D4D58140A0B8B00BA5380 /* CoreData.framework */; };
+		E20D4D5F140A0B8B00BA5380 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E20D4D5D140A0B8B00BA5380 /* InfoPlist.strings */; };
+		E20D4D61140A0B8B00BA5380 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E20D4D60140A0B8B00BA5380 /* main.m */; };
+		E20D4D65140A0B8B00BA5380 /* MaaSiveTapsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E20D4D64140A0B8B00BA5380 /* MaaSiveTapsAppDelegate.m */; };
+		E20D4D68140A0B8B00BA5380 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E20D4D66140A0B8B00BA5380 /* MainWindow.xib */; };
+		E20D4D6B140A0B8B00BA5380 /* MaaSiveTaps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E20D4D69140A0B8B00BA5380 /* MaaSiveTaps.xcdatamodeld */; };
+		E20D4D78140A0BF600BA5380 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = E20D4D77140A0BF600BA5380 /* Score.m */; };
+		E20D4D7C140A0C1500BA5380 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20D4D7A140A0C1500BA5380 /* RootViewController.m */; };
+		E20D4D7D140A0C1500BA5380 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E20D4D7B140A0C1500BA5380 /* RootViewController.xib */; };
+		E20D4D83140A0E4200BA5380 /* RemoteScore.m in Sources */ = {isa = PBXBuildFile; fileRef = E20D4D82140A0E4200BA5380 /* RemoteScore.m */; };
+		E20D4D87140A0E5800BA5380 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20D4D85140A0E5800BA5380 /* GameViewController.m */; };
+		E20D4D88140A0E5800BA5380 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E20D4D86140A0E5800BA5380 /* GameViewController.xib */; };
+		E20D4D8C140A167D00BA5380 /* HighScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20D4D8A140A167C00BA5380 /* HighScoreViewController.m */; };
+		E20D4D8D140A167D00BA5380 /* HighScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E20D4D8B140A167D00BA5380 /* HighScoreViewController.xib */; };
+		EFB8A0DF5E3886711ED2CA7F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30E4E0A94087EEC4A92A105 /* CFNetwork.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F71FA7480B5F34A4AC6BBE2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		345BE761E48FFE73AFC921BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6B882DAECD5FF3717C59E3BE /* MaaSive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MaaSive.framework; sourceTree = "<group>"; };
+		AA679A5C34F2D3B6AA50D631 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B30E4E0A94087EEC4A92A105 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B57A5B21D4B54203771BEE45 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C8294CDE917E4B7D09F0B4B9 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		DA2998DCF0C52963A7A836BD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E20D4D4E140A0B8B00BA5380 /* MaaSiveTaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaaSiveTaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20D4D52140A0B8B00BA5380 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E20D4D54140A0B8B00BA5380 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E20D4D56140A0B8B00BA5380 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E20D4D58140A0B8B00BA5380 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E20D4D5C140A0B8B00BA5380 /* MaaSiveTaps-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MaaSiveTaps-Info.plist"; sourceTree = "<group>"; };
+		E20D4D5E140A0B8B00BA5380 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E20D4D60140A0B8B00BA5380 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E20D4D62140A0B8B00BA5380 /* MaaSiveTaps-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MaaSiveTaps-Prefix.pch"; sourceTree = "<group>"; };
+		E20D4D63140A0B8B00BA5380 /* MaaSiveTapsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaaSiveTapsAppDelegate.h; sourceTree = "<group>"; };
+		E20D4D64140A0B8B00BA5380 /* MaaSiveTapsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaaSiveTapsAppDelegate.m; sourceTree = "<group>"; };
+		E20D4D67140A0B8B00BA5380 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		E20D4D6A140A0B8B00BA5380 /* MaaSiveTaps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MaaSiveTaps.xcdatamodel; sourceTree = "<group>"; };
+		E20D4D76140A0BF600BA5380 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		E20D4D77140A0BF600BA5380 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		E20D4D79140A0C1500BA5380 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		E20D4D7A140A0C1500BA5380 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		E20D4D7B140A0C1500BA5380 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		E20D4D81140A0E4200BA5380 /* RemoteScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteScore.h; sourceTree = "<group>"; };
+		E20D4D82140A0E4200BA5380 /* RemoteScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteScore.m; sourceTree = "<group>"; };
+		E20D4D84140A0E5800BA5380 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		E20D4D85140A0E5800BA5380 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		E20D4D86140A0E5800BA5380 /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		E20D4D89140A167C00BA5380 /* HighScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScoreViewController.h; sourceTree = "<group>"; };
+		E20D4D8A140A167C00BA5380 /* HighScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScoreViewController.m; sourceTree = "<group>"; };
+		E20D4D8B140A167D00BA5380 /* HighScoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HighScoreViewController.xib; sourceTree = "<group>"; };
+		ECDDC44631D7ED0FF73C40C8 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E20D4D4B140A0B8B00BA5380 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E20D4D53140A0B8B00BA5380 /* UIKit.framework in Frameworks */,
+				E20D4D55140A0B8B00BA5380 /* Foundation.framework in Frameworks */,
+				E20D4D57140A0B8B00BA5380 /* CoreGraphics.framework in Frameworks */,
+				E20D4D59140A0B8B00BA5380 /* CoreData.framework in Frameworks */,
+				3032A3A8C415EFED5B5DC7DD /* MaaSive.framework in Frameworks */,
+				EFB8A0DF5E3886711ED2CA7F /* CFNetwork.framework in Frameworks */,
+				1D315F85C11D531F9B9DDE95 /* SystemConfiguration.framework in Frameworks */,
+				1347B37AE59CD9627BCB5C2B /* Security.framework in Frameworks */,
+				4F607174B4892DEBCBFEBFEB /* MobileCoreServices.framework in Frameworks */,
+				80BA6341525E0952D1A746CB /* UIKit.framework in Frameworks */,
+				9B21BD4F5B2639F5BDBC786B /* CoreGraphics.framework in Frameworks */,
+				C5AF99E14DE70315D51D6CD6 /* libz.1.2.3.dylib in Frameworks */,
+				4DC676572CDA2B9A4630DC12 /* libsqlite3.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E20D4D43140A0B8A00BA5380 = {
+			isa = PBXGroup;
+			children = (
+				E20D4D5A140A0B8B00BA5380 /* MaaSiveTaps */,
+				E20D4D51140A0B8B00BA5380 /* Frameworks */,
+				E20D4D4F140A0B8B00BA5380 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E20D4D4F140A0B8B00BA5380 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E20D4D4E140A0B8B00BA5380 /* MaaSiveTaps.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E20D4D51140A0B8B00BA5380 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B882DAECD5FF3717C59E3BE /* MaaSive.framework */,
+				B30E4E0A94087EEC4A92A105 /* CFNetwork.framework */,
+				DA2998DCF0C52963A7A836BD /* SystemConfiguration.framework */,
+				2F71FA7480B5F34A4AC6BBE2 /* Security.framework */,
+				B57A5B21D4B54203771BEE45 /* MobileCoreServices.framework */,
+				345BE761E48FFE73AFC921BB /* UIKit.framework */,
+				AA679A5C34F2D3B6AA50D631 /* CoreGraphics.framework */,
+				C8294CDE917E4B7D09F0B4B9 /* libz.1.2.3.dylib */,
+				ECDDC44631D7ED0FF73C40C8 /* libsqlite3.0.dylib */,
+				E20D4D52140A0B8B00BA5380 /* UIKit.framework */,
+				E20D4D54140A0B8B00BA5380 /* Foundation.framework */,
+				E20D4D56140A0B8B00BA5380 /* CoreGraphics.framework */,
+				E20D4D58140A0B8B00BA5380 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E20D4D5A140A0B8B00BA5380 /* MaaSiveTaps */ = {
+			isa = PBXGroup;
+			children = (
+				E20D4D63140A0B8B00BA5380 /* MaaSiveTapsAppDelegate.h */,
+				E20D4D64140A0B8B00BA5380 /* MaaSiveTapsAppDelegate.m */,
+				E20D4D66140A0B8B00BA5380 /* MainWindow.xib */,
+				E20D4D7F140A0C2E00BA5380 /* View Controllers */,
+				E20D4D80140A0E2800BA5380 /* MaaSive Bridge Files */,
+				E20D4D7E140A0C1E00BA5380 /* Core Data Stuff */,
+				E20D4D5B140A0B8B00BA5380 /* Supporting Files */,
+			);
+			path = MaaSiveTaps;
+			sourceTree = "<group>";
+		};
+		E20D4D5B140A0B8B00BA5380 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E20D4D5C140A0B8B00BA5380 /* MaaSiveTaps-Info.plist */,
+				E20D4D5D140A0B8B00BA5380 /* InfoPlist.strings */,
+				E20D4D60140A0B8B00BA5380 /* main.m */,
+				E20D4D62140A0B8B00BA5380 /* MaaSiveTaps-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E20D4D7E140A0C1E00BA5380 /* Core Data Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				E20D4D69140A0B8B00BA5380 /* MaaSiveTaps.xcdatamodeld */,
+				E20D4D76140A0BF600BA5380 /* Score.h */,
+				E20D4D77140A0BF600BA5380 /* Score.m */,
+			);
+			name = "Core Data Stuff";
+			sourceTree = "<group>";
+		};
+		E20D4D7F140A0C2E00BA5380 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E20D4D79140A0C1500BA5380 /* RootViewController.h */,
+				E20D4D7A140A0C1500BA5380 /* RootViewController.m */,
+				E20D4D7B140A0C1500BA5380 /* RootViewController.xib */,
+				E20D4D84140A0E5800BA5380 /* GameViewController.h */,
+				E20D4D85140A0E5800BA5380 /* GameViewController.m */,
+				E20D4D86140A0E5800BA5380 /* GameViewController.xib */,
+				E20D4D89140A167C00BA5380 /* HighScoreViewController.h */,
+				E20D4D8A140A167C00BA5380 /* HighScoreViewController.m */,
+				E20D4D8B140A167D00BA5380 /* HighScoreViewController.xib */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E20D4D80140A0E2800BA5380 /* MaaSive Bridge Files */ = {
+			isa = PBXGroup;
+			children = (
+				E20D4D81140A0E4200BA5380 /* RemoteScore.h */,
+				E20D4D82140A0E4200BA5380 /* RemoteScore.m */,
+			);
+			name = "MaaSive Bridge Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E20D4D4D140A0B8B00BA5380 /* MaaSiveTaps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E20D4D6E140A0B8B00BA5380 /* Build configuration list for PBXNativeTarget "MaaSiveTaps" */;
+			buildPhases = (
+				E20D4D4A140A0B8B00BA5380 /* Sources */,
+				E20D4D4B140A0B8B00BA5380 /* Frameworks */,
+				E20D4D4C140A0B8B00BA5380 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaaSiveTaps;
+			productName = MaaSiveTaps;
+			productReference = E20D4D4E140A0B8B00BA5380 /* MaaSiveTaps.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E20D4D45140A0B8A00BA5380 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "ELC Technologies";
+			};
+			buildConfigurationList = E20D4D48140A0B8A00BA5380 /* Build configuration list for PBXProject "MaaSiveTaps" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E20D4D43140A0B8A00BA5380;
+			productRefGroup = E20D4D4F140A0B8B00BA5380 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E20D4D4D140A0B8B00BA5380 /* MaaSiveTaps */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E20D4D4C140A0B8B00BA5380 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E20D4D5F140A0B8B00BA5380 /* InfoPlist.strings in Resources */,
+				E20D4D68140A0B8B00BA5380 /* MainWindow.xib in Resources */,
+				E20D4D7D140A0C1500BA5380 /* RootViewController.xib in Resources */,
+				E20D4D88140A0E5800BA5380 /* GameViewController.xib in Resources */,
+				E20D4D8D140A167D00BA5380 /* HighScoreViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E20D4D4A140A0B8B00BA5380 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E20D4D61140A0B8B00BA5380 /* main.m in Sources */,
+				E20D4D65140A0B8B00BA5380 /* MaaSiveTapsAppDelegate.m in Sources */,
+				E20D4D6B140A0B8B00BA5380 /* MaaSiveTaps.xcdatamodeld in Sources */,
+				E20D4D78140A0BF600BA5380 /* Score.m in Sources */,
+				E20D4D7C140A0C1500BA5380 /* RootViewController.m in Sources */,
+				E20D4D83140A0E4200BA5380 /* RemoteScore.m in Sources */,
+				E20D4D87140A0E5800BA5380 /* GameViewController.m in Sources */,
+				E20D4D8C140A167D00BA5380 /* HighScoreViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E20D4D5D140A0B8B00BA5380 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E20D4D5E140A0B8B00BA5380 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E20D4D66140A0B8B00BA5380 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E20D4D67140A0B8B00BA5380 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E20D4D6C140A0B8B00BA5380 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)\"";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E20D4D6D140A0B8B00BA5380 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)\"";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E20D4D6F140A0B8B00BA5380 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MaaSiveTaps/MaaSiveTaps-Prefix.pch";
+				INFOPLIST_FILE = "MaaSiveTaps/MaaSiveTaps-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E20D4D70140A0B8B00BA5380 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MaaSiveTaps/MaaSiveTaps-Prefix.pch";
+				INFOPLIST_FILE = "MaaSiveTaps/MaaSiveTaps-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E20D4D48140A0B8A00BA5380 /* Build configuration list for PBXProject "MaaSiveTaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E20D4D6C140A0B8B00BA5380 /* Debug */,
+				E20D4D6D140A0B8B00BA5380 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E20D4D6E140A0B8B00BA5380 /* Build configuration list for PBXNativeTarget "MaaSiveTaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E20D4D6F140A0B8B00BA5380 /* Debug */,
+				E20D4D70140A0B8B00BA5380 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E20D4D69140A0B8B00BA5380 /* MaaSiveTaps.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E20D4D6A140A0B8B00BA5380 /* MaaSiveTaps.xcdatamodel */,
+			);
+			currentVersion = E20D4D6A140A0B8B00BA5380 /* MaaSiveTaps.xcdatamodel */;
+			path = MaaSiveTaps.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E20D4D45140A0B8A00BA5380 /* Project object */;
+}
