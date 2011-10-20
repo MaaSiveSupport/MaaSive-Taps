@@ -22,8 +22,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 	MaaSManager *manager = [MaaSManager sharedManager];
-	[manager setAppId:@"bb0e86e424564eb46b164663b9"];
-	[manager setSecretKey:@"93472df95b5ae32a6b9cc2dcf74c09e0e1874173d0877618b179fa21eada91a42f9a2f"];
+	[manager setAppId:@"5ae68970df0726a344a81450ad5c"];
+	[manager setSecretKey:@"9865ed8ac194c311a4008fa086e6179d23041f2139d7191a2a03d98d3b89396a8e68f7c6"];
 	
 	[self.rootViewController setManagedObjectContext:self.managedObjectContext];
 	[self.window addSubview:self.navigationController.view];

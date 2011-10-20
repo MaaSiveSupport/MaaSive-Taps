@@ -116,21 +116,22 @@
 			[score setName:self.nameTextField.text];		
 			
 			RemoteScore *remoteScore = [[RemoteScore alloc] initRemoteScoreWithScore:score];
-			[remoteScore saveRemoteWithBlock:^(BOOL saved, NSError *error) {
-				if(saved) {
+			[remoteScore saveRemoteWithCachedResults:YES 
+                                     completionBlock:^(BOOL saved, NSError *error) {
+                                         if(saved) {
 							
-					[score setCreated_at:remoteScore.created_at];
-					NSLog(@"Remote score saved to MaaSive");
-					[self.navigationController performSelectorOnMainThread:@selector(popViewControllerAnimated:)
-																withObject:[NSNumber numberWithBool:YES]
-															 waitUntilDone:NO];
-				}
+                                             [score setCreated_at:remoteScore.created_at];
+                                             NSLog(@"Remote score saved to MaaSive");
+                                             [self.navigationController performSelectorOnMainThread:@selector(popViewControllerAnimated:)
+                                                                                         withObject:[NSNumber numberWithBool:YES]
+                                                                                      waitUntilDone:NO];
+                                         }
 				
-				else {
+                                         else {
 					
-					NSLog(@"Error saving Remote Score: %@\n User Info: %@", [error localizedDescription], [error userInfo]);
-				}
-			}];
+                                             NSLog(@"Error saving Remote Score: %@\n User Info: %@", [error localizedDescription], [error userInfo]);
+                                         }
+                                     }];
 		}
 		
 		else {

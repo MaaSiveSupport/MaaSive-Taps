@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B601D61144FCBD4008726A4 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B601D60144FCBD4008726A4 /* libz.1.2.5.dylib */; };
 		1347B37AE59CD9627BCB5C2B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F71FA7480B5F34A4AC6BBE2 /* Security.framework */; };
 		1D315F85C11D531F9B9DDE95 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2998DCF0C52963A7A836BD /* SystemConfiguration.framework */; };
 		3032A3A8C415EFED5B5DC7DD /* MaaSive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B882DAECD5FF3717C59E3BE /* MaaSive.framework */; };
@@ -14,7 +15,6 @@
 		4F607174B4892DEBCBFEBFEB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57A5B21D4B54203771BEE45 /* MobileCoreServices.framework */; };
 		80BA6341525E0952D1A746CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345BE761E48FFE73AFC921BB /* UIKit.framework */; };
 		9B21BD4F5B2639F5BDBC786B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA679A5C34F2D3B6AA50D631 /* CoreGraphics.framework */; };
-		C5AF99E14DE70315D51D6CD6 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C8294CDE917E4B7D09F0B4B9 /* libz.1.2.3.dylib */; };
 		E20D4D53140A0B8B00BA5380 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20D4D52140A0B8B00BA5380 /* UIKit.framework */; };
 		E20D4D55140A0B8B00BA5380 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20D4D54140A0B8B00BA5380 /* Foundation.framework */; };
 		E20D4D57140A0B8B00BA5380 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20D4D56140A0B8B00BA5380 /* CoreGraphics.framework */; };
@@ -36,13 +36,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B601D60144FCBD4008726A4 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		2F71FA7480B5F34A4AC6BBE2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		345BE761E48FFE73AFC921BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6B882DAECD5FF3717C59E3BE /* MaaSive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MaaSive.framework; sourceTree = "<group>"; };
 		AA679A5C34F2D3B6AA50D631 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B30E4E0A94087EEC4A92A105 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		B57A5B21D4B54203771BEE45 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		C8294CDE917E4B7D09F0B4B9 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
 		DA2998DCF0C52963A7A836BD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E20D4D4E140A0B8B00BA5380 /* MaaSiveTaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaaSiveTaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20D4D52140A0B8B00BA5380 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -78,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B601D61144FCBD4008726A4 /* libz.1.2.5.dylib in Frameworks */,
 				E20D4D53140A0B8B00BA5380 /* UIKit.framework in Frameworks */,
 				E20D4D55140A0B8B00BA5380 /* Foundation.framework in Frameworks */,
 				E20D4D57140A0B8B00BA5380 /* CoreGraphics.framework in Frameworks */,
@@ -89,7 +90,6 @@
 				4F607174B4892DEBCBFEBFEB /* MobileCoreServices.framework in Frameworks */,
 				80BA6341525E0952D1A746CB /* UIKit.framework in Frameworks */,
 				9B21BD4F5B2639F5BDBC786B /* CoreGraphics.framework in Frameworks */,
-				C5AF99E14DE70315D51D6CD6 /* libz.1.2.3.dylib in Frameworks */,
 				4DC676572CDA2B9A4630DC12 /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,8 +124,8 @@
 				B57A5B21D4B54203771BEE45 /* MobileCoreServices.framework */,
 				345BE761E48FFE73AFC921BB /* UIKit.framework */,
 				AA679A5C34F2D3B6AA50D631 /* CoreGraphics.framework */,
-				C8294CDE917E4B7D09F0B4B9 /* libz.1.2.3.dylib */,
 				ECDDC44631D7ED0FF73C40C8 /* libsqlite3.0.dylib */,
+				0B601D60144FCBD4008726A4 /* libz.1.2.5.dylib */,
 				E20D4D52140A0B8B00BA5380 /* UIKit.framework */,
 				E20D4D54140A0B8B00BA5380 /* Foundation.framework */,
 				E20D4D56140A0B8B00BA5380 /* CoreGraphics.framework */,
