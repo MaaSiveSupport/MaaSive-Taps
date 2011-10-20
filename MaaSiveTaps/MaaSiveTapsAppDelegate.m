@@ -22,8 +22,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 	MaaSManager *manager = [MaaSManager sharedManager];
-	[manager setAppId:@"5ae68970df0726a344a81450ad5c"];
-	[manager setSecretKey:@"9865ed8ac194c311a4008fa086e6179d23041f2139d7191a2a03d98d3b89396a8e68f7c6"];
+    
+#warning Fill in custom App ID and Secret Key here for Demo Application To Save To MaaSivegit 
+    
+	[manager setAppId:@" ENTER_APP_ID_HERE  "];
+	[manager setSecretKey:@" "];
 	
 	[self.rootViewController setManagedObjectContext:self.managedObjectContext];
 	[self.window addSubview:self.navigationController.view];
